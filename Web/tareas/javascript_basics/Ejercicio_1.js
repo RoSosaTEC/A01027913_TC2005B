@@ -1,13 +1,28 @@
 function caracterNoRepetido(cadena){
-	for (let i = 1; i < cadena.length; i++){
+	for (let i = 0; i < cadena.length; i++){
 		let caracter = cadena[i]
-		for (let j = i + 1; j < cadena.length - 1; j++){
-			(cadena[i]==cadena[j]) ? console.log(cadena[j]) : console.log("_")
+		let unico  = true
+
+		for (let j = 0; j < cadena.length; j++){
+			if (i!== j && cadena[j]===caracter){
+				unico = false
+			}
+		}
+		if (unico){
+			return caracter;
 		}
 	}
-
+return null;
 }
 
-const cadenaEjemplo = "abacddbec"
 
-caracterNoRepetido(cadenaEjemplo)
+let cadenaEjemplo = "abacddbec"
+
+let caracterUnico = caracterNoRepetido(cadenaEjemplo)
+
+if (caracterUnico){
+	console.log("caracter unico:" + caracterUnico)
+}
+else{
+	console.log("No se han encontrado caracteres unicos.")
+}
