@@ -1,6 +1,5 @@
 function powerOfTwo(numero){
-	let testNum = 0
-	let i = numero
+
 	while (numero%2 == 0){
 		numero = numero/2
 
