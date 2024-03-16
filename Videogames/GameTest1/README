@@ -3,7 +3,7 @@ Version Final del juego Simon Dice, por Rodrigo Sosa Rojas / A01027913
 En este juego, la computadora nos dará una secuencia entre 4 botones. Nuestro objetivo es
 seguir acertando la secuencia para conseguir puntos
 
-Del lado derecho, existe un boton con el texto "reiniciar". Al presionar el botón:
+Del lado izquierdo, existe un boton con el texto "reiniciar". Al presionar el botón:
 - Lo que sea que llevemos de secuencia como jugador regresará a 0
 - el juego volverá a mostar la secuencia de ese nivel 
 
