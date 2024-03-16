@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.VisualScripting;
+using TMPro;
 
 //Script controlador de juego Simon dice
 // Rodrigo Sosa Rojas / A01027913 / 06-03-24
@@ -11,11 +12,12 @@ public class SimonController : MonoBehaviour
     // "SerializeField" deja que Unity pueda ver la lista, pero no otras clases
     [SerializeField] List<int> sequence;
     [SerializeField] GameObject[] buttons;
+    
 
     bool playerTurn = false;
     int index;
-    int level;
-    
+    int level; 
+    int repeatUses = 3;
     
     // Start is called before the first frame update
     void Start()
@@ -63,7 +65,9 @@ public class SimonController : MonoBehaviour
                 //Checar si terminamos la secuencia
                 if (index == sequence.Count){
                     level++;
-                    PlayerPrefs.SetInt("score: ",level);
+                    PlayerPrefs.SetInt("score",level);
+                    int test = PlayerPrefs.GetInt("score");
+                    print(test);
                     AddNumber();
                 }    
              }   else{
@@ -72,6 +76,21 @@ public class SimonController : MonoBehaviour
                 UnityEngine.SceneManagement.SceneManager.LoadScene("SimonResults");
             }
 
+        }
+    }
+
+    public void showAgain(){
+        if(playerTurn){
+            if(repeatUses > 0){
+                index = 0;
+                repeatUses--;
+                playerTurn = false;
+                StartCoroutine(ShowSequence());
+                Debug.Log("Volver a mostrar la secuencia: " + repeatUses + " restantes.");
+            }
+            else {
+                Debug.Log("no more repeat sequences uses");
+            }
         }
     }
 }

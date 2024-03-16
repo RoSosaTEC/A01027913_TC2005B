@@ -8,7 +8,7 @@ public class SimonScores : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     void Start()
     {
-        int score = PlayerPrefs.GetInt("Score: ",0);
+        int score = PlayerPrefs.GetInt("score",0);
         scoreText.text = "Score: " + score;
     }
 
