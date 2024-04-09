@@ -1,0 +1,38 @@
+.container{
+    width: 250px;
+    background-color: #7600b1;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10%;
+    border-style: dashed;
+}
+div{
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    margin: 0;
+    background-color: #00afaf;
+}
+h1{
+    margin: 0;
+}
+
+.box{
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.box_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
