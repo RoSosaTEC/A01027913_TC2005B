@@ -1,0 +1,55 @@
+body{
+    background-image: linear-gradient(to right,#201f20, #9700cc,#201f20);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-position: center;
+    margin: 200px;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+.title{
+    font-style: oblique;
+}
+.gradient{
+    background-image: linear-gradient(to right, #9700cc,#d7c71a, #9700cc);
+    margin-left: 200px;
+    margin-right: 200px;    
+}
+.mushoku{
+    background-color: rgb(196, 195, 65);
+}
+.konosuba{
+    background-color: rgb(0, 255, 255);   
+}
+.slime{
+    background-color: rgb(85, 197, 245);
+}
+.spice_wolf{
+    background-color: rgb(165, 42, 42);
+}
+.wind_breaker{
+    background-color: rgb(93, 201, 88);
+}
+.date_a_live{
+    background-color: rgb(165, 82, 82);
+}
+.jellyfish{
+    background-color: rgb(127, 191, 186);
+}
+.laid_back{
+    background-color: rgb(245, 245, 220);
+}
+.yozakura{
+    background-color: rgb(215, 158, 198);
+}
+.condition_love{
+    background-color: rgb(255, 165, 0);
+}
+.link_section{
+    background-color: white;
+    font-size: 1.1em;
+    text-align:center;
+    flex-wrap: wrap;
+    margin-left: 300px;
+    margin-right: 300px;    
+}
